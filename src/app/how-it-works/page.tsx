@@ -8,8 +8,25 @@ import { MaintenanceSupport } from "@/components/how-it-works/maintenance-suppor
 import { ProcessCTA } from "@/components/how-it-works/process-cta";
 
 export const metadata: Metadata = {
-  title: "How It Works | JWEBLY",
-  description: "Our complete process from discovery call to delivery, retention, and ongoing support. Interactive journey with Joe AI guidance.",
+  title: "AI Automation Process | 5-Phase Implementation from Discovery to Optimization | JWEBLY",
+  description: "5-phase AI automation implementation process: discovery, design, deployment, optimization, and support. Birmingham AI automation specialists.",
+  keywords: ["AI automation process", "AI implementation", "automation process", "AI deployment", "automation implementation"],
+  alternates: {
+    canonical: "https://jwebly.co.uk/how-it-works",
+  },
+  openGraph: {
+    title: "AI Automation Process | 5-Phase Implementation from Discovery to Optimization",
+    description: "5-phase AI automation implementation process: discovery, design, deployment, optimization, and support. Birmingham specialists.",
+    url: "https://jwebly.co.uk/how-it-works",
+    siteName: "JWEBLY",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Automation Process | 5-Phase Implementation from Discovery to Optimization",
+    description: "5-phase AI automation implementation process: discovery, design, deployment, optimization, and support.",
+  },
 };
 
 export default function HowItWorksPage() {

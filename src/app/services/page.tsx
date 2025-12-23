@@ -8,8 +8,25 @@ import { ServicesFAQ } from "@/components/services/services-faq";
 import { ServicesCTA } from "@/components/services/services-cta";
 
 export const metadata: Metadata = {
-  title: "Services | JWEBLY",
-  description: "Choose the right AI automation solution for your business. From implementation pilots to custom AI agents.",
+  title: "AI Automation Services | Pilot, System & Agent Solutions for UK Agencies | JWEBLY",
+  description: "AI automation services for UK agencies: £1,500 pilots, £3,000-5,000 systems, £7,000-12,000 agents. Birmingham AI automation specialists.",
+  keywords: ["AI automation services", "automation services UK", "AI services Birmingham", "automation solutions", "AI agency services"],
+  alternates: {
+    canonical: "https://jwebly.co.uk/services",
+  },
+  openGraph: {
+    title: "AI Automation Services | Pilot, System & Agent Solutions for UK Agencies",
+    description: "AI automation services for UK agencies: £1,500 pilots, £3,000-5,000 systems, £7,000-12,000 agents. Birmingham specialists.",
+    url: "https://jwebly.co.uk/services",
+    siteName: "JWEBLY",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Automation Services | Pilot, System & Agent Solutions for UK Agencies",
+    description: "AI automation services for UK agencies: £1,500 pilots, £3,000-5,000 systems, £7,000-12,000 agents.",
+  },
 };
 
 export default function ServicesPage() {

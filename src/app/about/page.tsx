@@ -8,8 +8,25 @@ import { AboutJoe } from "@/components/about/about-joe";
 import { AboutCTA } from "@/components/about/about-cta";
 
 export const metadata: Metadata = {
-  title: "About Us | JWEBLY",
-  description: "Founded to make enterprise-grade AI automation accessible to SMEs. Our mission, values, and the team behind Jwebly.",
+  title: "AI Agency Birmingham | West Midlands AI Automation Specialists | JWEBLY",
+  description: "West Midlands AI automation specialists based in Birmingham. Making enterprise-grade AI accessible to SMEs. Mission, values, and team.",
+  keywords: ["AI agency Birmingham", "West Midlands AI", "Birmingham automation", "AI specialists Birmingham", "West Midlands AI agency"],
+  alternates: {
+    canonical: "https://jwebly.co.uk/about",
+  },
+  openGraph: {
+    title: "AI Agency Birmingham | West Midlands AI Automation Specialists",
+    description: "West Midlands AI automation specialists based in Birmingham. Making enterprise-grade AI accessible to SMEs. Mission, values, and team.",
+    url: "https://jwebly.co.uk/about",
+    siteName: "JWEBLY",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Agency Birmingham | West Midlands AI Automation Specialists",
+    description: "West Midlands AI automation specialists based in Birmingham. Making enterprise-grade AI accessible to SMEs.",
+  },
 };
 
 export default function AboutPage() {
