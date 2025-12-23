@@ -1,0 +1,9 @@
+# robots.txt for jwebly.co.uk
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://jwebly.co.uk/sitemap.xml
+
