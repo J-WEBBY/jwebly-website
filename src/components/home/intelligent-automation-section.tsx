@@ -28,8 +28,8 @@ export function IntelligentAutomationSection() {
   const [hoveredPillar, setHoveredPillar] = useState<string | null>(null);
 
   return (
-    <section className="bg-black py-20">
-      <div className="container max-w-7xl mx-auto px-6">
+    <section className="bg-black py-12 md:py-20">
+      <div className="container max-w-7xl mx-auto px-4 md:px-6">
         
         {/* Top Section - Header */}
             <motion.div
@@ -37,12 +37,12 @@ export function IntelligentAutomationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-normal text-white mb-6 leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white mb-4 md:mb-6 leading-tight">
                 Intelligent Automation System
               </h2>
-              <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-base md:text-xl lg:text-2xl text-gray-400 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
                 Multi-workflow automation with AI decision-making. 3-5 interconnected workflows that handle end-to-end processes—from data intake to decision-making to action—without human intervention.
               </p>
               <Button
@@ -58,7 +58,7 @@ export function IntelligentAutomationSection() {
             </motion.div>
 
         {/* Main Content - Two Column Layout */}
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           
           {/* Left: Three Pillars */}
           <div className="space-y-6 pt-0">
@@ -107,12 +107,12 @@ export function IntelligentAutomationSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative hidden md:block"
+            className="relative block"
           >
-            <div className="bg-gray-900 rounded-2xl flex items-start border border-gray-800 h-full">
+            <div className="bg-gray-900 rounded-2xl flex items-start border border-gray-800 h-full min-h-[300px] md:min-h-[500px]">
               {/* Unified Isometric 3D Stack Visualization */}
-              <div className="relative w-full p-6 pt-4">
-                <svg viewBox="0 0 500 400" className="w-full h-[500px]" preserveAspectRatio="xMidYMid meet">
+              <div className="relative w-full p-4 md:p-6 pt-4">
+                <svg viewBox="0 0 500 400" className="w-full h-[300px] md:h-[500px]" preserveAspectRatio="xMidYMid meet">
                   <defs>
                     <linearGradient id="pinkCyan" x1="0%" y1="0%" x2="100%" y2="100%">
                       <stop offset="0%" stopColor="#FF0080" />

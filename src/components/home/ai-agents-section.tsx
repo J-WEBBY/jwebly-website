@@ -244,7 +244,7 @@ function IndustryCard({ industry }: { industry: typeof INDUSTRIES[0] }) {
       </p>
 
       {/* Animated Chat Interface */}
-      <div className="bg-[#0A0A0A] rounded-xl border border-gray-800 p-6 min-h-[300px] flex-1 flex flex-col justify-start">
+      <div className="bg-[#0A0A0A] rounded-xl border border-gray-800 p-4 md:p-6 min-h-[250px] md:min-h-[300px] flex-1 flex flex-col justify-start">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentTaskIndex}
@@ -281,8 +281,8 @@ export function AIAgentsSection() {
   };
 
   return (
-    <section className="bg-black py-32">
-      <div className="container max-w-7xl mx-auto px-6">
+    <section className="bg-black py-16 md:py-32">
+      <div className="container max-w-7xl mx-auto px-4 md:px-6">
         
         {/* Top Section - Header */}
         <motion.div
@@ -290,20 +290,20 @@ export function AIAgentsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
           <div className="text-xs font-semibold text-gray-600 mb-4 tracking-widest uppercase">
             APPLY AI
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-normal text-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white mb-4 md:mb-6 leading-tight">
             Custom AI Agent
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-4xl mx-auto">
+          <p className="text-base md:text-xl lg:text-2xl text-gray-400 mb-6 md:mb-8 max-w-4xl mx-auto px-4">
             Bespoke Agentic solution, trained on your data, reasoning autonomously
           </p>
           
           {/* Features List */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm md:text-base text-gray-400 mb-8">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 text-xs md:text-sm lg:text-base text-gray-400 mb-6 md:mb-8 px-4">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-gray-600" />
               <span>Trained on proprietary knowledge</span>
@@ -338,14 +338,14 @@ export function AIAgentsSection() {
         {/* Two Cards - Side by Side */}
         <div className="relative">
           <AnimatePresence mode="wait">
-            <motion.div
-              key={currentPairIndex}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -30 }}
-              transition={{ duration: 0.6 }}
-              className="grid md:grid-cols-2 gap-6"
-            >
+              <motion.div
+                key={currentPairIndex}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.6 }}
+                className="grid md:grid-cols-2 gap-4 md:gap-6"
+              >
               {/* Left Card */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -371,10 +371,10 @@ export function AIAgentsSection() {
             onClick={handleNext}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-4 md:translate-x-8 w-12 h-12 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-100 transition-colors z-10 shadow-lg"
+            className="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 lg:translate-x-8 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-100 transition-colors z-10 shadow-lg"
             aria-label="Next"
           >
-            <ArrowRight className="w-6 h-6" />
+            <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
           </motion.button>
         </div>
 

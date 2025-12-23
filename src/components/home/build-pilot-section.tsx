@@ -7,15 +7,15 @@ import { Button } from "@/components/ui/button";
 
 export function BuildPilotSection() {
   return (
-    <section className="bg-black py-32 relative overflow-hidden">
+    <section className="bg-black py-16 md:py-32 relative overflow-hidden">
       {/* Radiant Glow Effect */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-accent/20 via-accent/10 to-transparent rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-scale-cyan/20 via-scale-cyan/10 to-transparent rounded-full blur-2xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-gradient-radial from-accent/20 via-accent/10 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-radial from-scale-cyan/20 via-scale-cyan/10 to-transparent rounded-full blur-2xl" />
       </div>
       
-      <div className="container max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="container max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           
           {/* Left: Description */}
           <motion.div
@@ -27,26 +27,26 @@ export function BuildPilotSection() {
               BUILD AI
             </div>
 
-            <h2 className="text-5xl md:text-6xl font-normal text-white mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-normal text-white mb-4 md:mb-6 leading-tight">
               Start Your Pilot in Q1 2026
             </h2>
 
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-3 text-xl text-gray-400">
-                <CheckCircle className="w-6 h-6 text-accent shrink-0" />
+            <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+              <div className="flex items-center gap-3 text-base md:text-xl text-gray-400">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-accent shrink-0" />
                 <span>£1,500-2,000</span>
               </div>
-              <div className="flex items-center gap-3 text-xl text-gray-400">
-                <CheckCircle className="w-6 h-6 text-accent shrink-0" />
+              <div className="flex items-center gap-3 text-base md:text-xl text-gray-400">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-accent shrink-0" />
                 <span>2-3 weeks delivery</span>
               </div>
-              <div className="flex items-center gap-3 text-xl text-gray-400">
-                <CheckCircle className="w-6 h-6 text-accent shrink-0" />
+              <div className="flex items-center gap-3 text-base md:text-xl text-gray-400">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-accent shrink-0" />
                 <span>Limited to 4-5 agencies</span>
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button
                 asChild
                 size="lg"
@@ -77,16 +77,16 @@ export function BuildPilotSection() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-background-elevated border border-gray-900 rounded-2xl p-12 min-h-[400px] flex items-center justify-center"
+            className="bg-background-elevated border border-gray-900 rounded-2xl p-6 md:p-12 min-h-[250px] md:min-h-[400px] flex items-center justify-center order-first md:order-last"
           >
             <div className="text-center">
-              <div className="text-8xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-dark mb-4">
+              <div className="text-5xl md:text-8xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-dark mb-2 md:mb-4">
                 Q1
               </div>
-              <div className="text-2xl text-white font-semibold">
+              <div className="text-xl md:text-2xl text-white font-semibold">
                 2026 Pilots
               </div>
-              <div className="text-gray-600 mt-2">
+              <div className="text-sm md:text-base text-gray-600 mt-2">
                 4 spots remaining
               </div>
             </div>

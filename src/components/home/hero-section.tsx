@@ -220,13 +220,14 @@ function NeuralNetworkGraphic() {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, delay: 0.4 }}
-      className="relative hidden md:block h-[500px] w-full"
+      className="relative block h-[300px] md:h-[500px] w-full"
     >
       <svg
         width="100%"
         height="100%"
         viewBox="0 0 550 500"
         className="overflow-visible"
+        preserveAspectRatio="xMidYMid meet"
       >
         {/* Gradient Definitions - Reduced Brightness */}
         <defs>
@@ -288,8 +289,8 @@ function NeuralNetworkGraphic() {
 export function HeroSection() {
   return (
     <section className="relative min-h-screen bg-black flex items-center pt-20 md:pt-24">
-      <div className="container max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="container max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           
           {/* Left: Text Content */}
           <div className="text-left">
