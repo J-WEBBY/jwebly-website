@@ -6,6 +6,7 @@ const logos = [
   { input: 'public/logo.svg', output: 'public/logo.png', width: 400, height: 100 },
   { input: 'public/logo-vertical.svg', output: 'public/logo-vertical.png', width: 240, height: 280 },
   { input: 'public/logo-icon.svg', output: 'public/logo-icon.png', width: 200, height: 200 },
+  { input: 'public/logo-black-bg.svg', output: 'public/logo-black-bg.png', width: 400, height: 100 },
 ];
 
 async function convertLogos() {
