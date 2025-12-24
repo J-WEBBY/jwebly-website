@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { NAVIGATION } from "@/lib/constants/site";
 
 export function Footer() {
@@ -13,8 +14,15 @@ export function Footer() {
           
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <Link href="/" className="text-2xl font-semibold text-white hover:text-gray-300 transition-colors inline-block mb-4">
-              JWEBLY
+            <Link href="/" className="inline-block mb-4 hover:opacity-80 transition-opacity">
+              <Image
+                src="/logo-vertical.svg"
+                alt="JWEBLY Logo"
+                width={100}
+                height={116}
+                className="h-auto w-24"
+                priority
+              />
             </Link>
             <p className="text-sm text-gray-400">
               AI systems that become part of your team.

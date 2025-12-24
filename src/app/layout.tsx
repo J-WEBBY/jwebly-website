@@ -58,7 +58,7 @@ const organizationSchema = {
   "@type": "Organization",
   "name": "JWEBLY",
   "url": "https://jwebly.co.uk",
-  "logo": "https://jwebly.co.uk/logo.png",
+  "logo": "https://jwebly.co.uk/logo.svg",
   "description": "AI automation specialists based in Birmingham, West Midlands. Custom AI solutions for recruitment and accounting agencies.",
   "address": {
     "@type": "PostalAddress",
@@ -80,7 +80,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "@id": "https://jwebly.co.uk/#organization",
   "name": "JWEBLY",
-  "image": "https://jwebly.co.uk/logo.png",
+  "image": "https://jwebly.co.uk/logo.svg",
   "description": "AI automation specialists serving Birmingham and West Midlands. Custom AI solutions for recruitment and accounting agencies.",
   "address": {
     "@type": "PostalAddress",

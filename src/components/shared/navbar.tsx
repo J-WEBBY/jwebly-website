@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NAVIGATION } from "@/lib/constants/site";
@@ -26,8 +27,15 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           
           {/* Logo */}
-          <Link href="/" className="text-xl md:text-2xl font-normal text-white hover:text-gray-300 transition-colors">
-            JWEBLY
+          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <Image
+              src="/logo.svg"
+              alt="JWEBLY Logo"
+              width={160}
+              height={40}
+              className="h-8 md:h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
