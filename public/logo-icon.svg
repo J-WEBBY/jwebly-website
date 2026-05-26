@@ -1,0 +1,69 @@
+<svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="octoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8A6CFF" stop-opacity="1" />
+      <stop offset="100%" stop-color="#4B7BFF" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="octoGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A98DFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#7B9FFF" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="octoGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B4FE0" stop-opacity="1" />
+      <stop offset="100%" stop-color="#3B5FD0" stop-opacity="1" />
+    </linearGradient>
+    <radialGradient id="headShine" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#A98DFF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#8A6CFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="headGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#A98DFF" stop-opacity="1" />
+      <stop offset="40%" stop-color="#8A6CFF" stop-opacity="1" />
+      <stop offset="100%" stop-color="#6B4FE0" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Tentacles (8 total, layered back to front for 3D) -->
+  <!-- Back tentacles -->
+  <path d="M30,52 Q18,62 12,78 Q10,84 14,86 Q18,84 20,78 Q24,66 34,56" fill="url(#octoGradDark)" opacity="0.7" />
+  <path d="M70,52 Q82,62 88,78 Q90,84 86,86 Q82,84 80,78 Q76,66 66,56" fill="url(#octoGradDark)" opacity="0.7" />
+
+  <!-- Mid-back tentacles -->
+  <path d="M36,55 Q28,68 18,82 Q15,88 19,90 Q23,88 26,82 Q32,70 38,58" fill="url(#octoGrad)" opacity="0.8" />
+  <path d="M64,55 Q72,68 82,82 Q85,88 81,90 Q77,88 74,82 Q68,70 62,58" fill="url(#octoGrad)" opacity="0.8" />
+
+  <!-- Mid-front tentacles -->
+  <path d="M40,58 Q34,72 28,86 Q26,92 30,94 Q34,92 34,86 Q36,74 42,60" fill="url(#octoGradLight)" opacity="0.9" />
+  <path d="M60,58 Q66,72 72,86 Q74,92 70,94 Q66,92 66,86 Q64,74 58,60" fill="url(#octoGradLight)" opacity="0.9" />
+
+  <!-- Front tentacles -->
+  <path d="M44,60 Q42,74 38,88 Q37,94 41,96 Q45,94 44,88 Q44,76 46,62" fill="url(#octoGrad)" />
+  <path d="M56,60 Q58,74 62,88 Q63,94 59,96 Q55,94 56,88 Q56,76 54,62" fill="url(#octoGrad)" />
+
+  <!-- Suction cups (small dots on front tentacles) -->
+  <circle cx="41" cy="72" r="1.5" fill="url(#octoGradDark)" opacity="0.5" />
+  <circle cx="40" cy="80" r="1.3" fill="url(#octoGradDark)" opacity="0.4" />
+  <circle cx="59" cy="72" r="1.5" fill="url(#octoGradDark)" opacity="0.5" />
+  <circle cx="60" cy="80" r="1.3" fill="url(#octoGradDark)" opacity="0.4" />
+
+  <!-- Head (3D dome shape) -->
+  <ellipse cx="50" cy="38" rx="24" ry="28" fill="url(#headGrad)" />
+
+  <!-- 3D highlight on head -->
+  <ellipse cx="44" cy="30" rx="14" ry="16" fill="url(#headShine)" />
+
+  <!-- Eyes -->
+  <ellipse cx="42" cy="42" rx="6" ry="7" fill="white" opacity="0.95" />
+  <ellipse cx="58" cy="42" rx="6" ry="7" fill="white" opacity="0.95" />
+
+  <!-- Pupils -->
+  <ellipse cx="43" cy="43" rx="3.5" ry="4.5" fill="#0A0A0A" />
+  <ellipse cx="59" cy="43" rx="3.5" ry="4.5" fill="#0A0A0A" />
+
+  <!-- Eye shine -->
+  <circle cx="44.5" cy="40" r="1.5" fill="white" opacity="0.9" />
+  <circle cx="60.5" cy="40" r="1.5" fill="white" opacity="0.9" />
+
+  <!-- Subtle rim light (3D effect - right edge) -->
+  <path d="M72,34 Q76,38 74,50 Q72,55 68,56" fill="none" stroke="#7B9FFF" stroke-width="1" opacity="0.3" />
+</svg>

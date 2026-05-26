@@ -1,0 +1,42 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#050810"/>
+  <circle cx="540" cy="400" r="500" fill="#8A6CFF" fill-opacity="0.05"/>
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A98DFF"/><stop offset="100%" stop-color="#6B9FFF"/></linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8A6CFF" stop-opacity="0.3"/><stop offset="100%" stop-color="#8A6CFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- Central mark (hub 540,360, d=240) -->
+  <circle cx="540" cy="360" r="255" fill="url(#gl)"/>
+  <circle cx="540" cy="360" r="143" fill="none" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.18"/>
+  <!-- Primary spokes -->
+  <line x1="540" y1="360" x2="540" y2="120" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <line x1="540" y1="360" x2="780" y2="360" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <line x1="540" y1="360" x2="540" y2="600" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <line x1="540" y1="360" x2="300" y2="360" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <!-- Secondary spokes (d=170, offset=120) -->
+  <line x1="540" y1="360" x2="660" y2="240" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <line x1="540" y1="360" x2="660" y2="480" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <line x1="540" y1="360" x2="420" y2="480" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <line x1="540" y1="360" x2="420" y2="240" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <!-- Primary nodes -->
+  <circle cx="540" cy="120" r="28" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="780" cy="360" r="28" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="540" cy="600" r="28" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="300" cy="360" r="28" fill="url(#ng)" opacity="0.9"/>
+  <!-- Secondary nodes -->
+  <circle cx="660" cy="240" r="18" fill="url(#ng)" opacity="0.55"/>
+  <circle cx="660" cy="480" r="18" fill="url(#ng)" opacity="0.55"/>
+  <circle cx="420" cy="480" r="18" fill="url(#ng)" opacity="0.55"/>
+  <circle cx="420" cy="240" r="18" fill="url(#ng)" opacity="0.55"/>
+  <!-- Hub -->
+  <circle cx="540" cy="360" r="80" fill="url(#mg)"/>
+  <circle cx="516" cy="336" r="30" fill="white" fill-opacity="0.12"/>
+  <!-- Text below -->
+  <text x="540" y="730" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="52" font-weight="700" fill="white" text-anchor="middle">Start with a</text>
+  <text x="540" y="810" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="52" font-weight="700" fill="url(#mg)" text-anchor="middle">discovery call.</text>
+  <text x="540" y="890" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="24" font-weight="400" fill="#6B7280" text-anchor="middle">60 minutes. Map your workflows. Agree on scope.</text>
+  <text x="540" y="940" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="24" font-weight="400" fill="#6B7280" text-anchor="middle">No commitment until you approve the plan.</text>
+  <line x1="80" y1="990" x2="1000" y2="990" stroke="#1B2B45" stroke-width="1"/>
+  <text x="540" y="1040" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="20" font-weight="600" fill="#8A6CFF" text-anchor="middle">JWEBLY · jwebly.co.uk</text>
+</svg>

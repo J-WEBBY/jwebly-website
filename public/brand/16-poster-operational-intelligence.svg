@@ -1,0 +1,51 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#050810"/>
+  <rect x="0" y="0" width="1080" height="6" fill="url(#tg)"/>
+  <circle cx="540" cy="500" r="700" fill="#8A6CFF" fill-opacity="0.04"/>
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A98DFF"/><stop offset="100%" stop-color="#6B9FFF"/></linearGradient>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8A6CFF" stop-opacity="0.25"/><stop offset="100%" stop-color="#8A6CFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- Central hub (hub 540,450, d_primary=260) -->
+  <circle cx="540" cy="450" r="278" fill="url(#gl)"/>
+  <circle cx="540" cy="450" r="156" fill="none" stroke="#8A6CFF" stroke-width="1.2" stroke-opacity="0.16"/>
+  <!-- Primary spokes (cardinal) -->
+  <line x1="540" y1="450" x2="540" y2="190" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.35"/>
+  <line x1="540" y1="450" x2="800" y2="450" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.35"/>
+  <line x1="540" y1="450" x2="540" y2="710" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.35"/>
+  <line x1="540" y1="450" x2="280" y2="450" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.35"/>
+  <!-- Diagonal spokes (secondary) -->
+  <line x1="540" y1="450" x2="724" y2="266" stroke="#4B7BFF" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="540" y1="450" x2="724" y2="634" stroke="#4B7BFF" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="540" y1="450" x2="356" y2="634" stroke="#4B7BFF" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="540" y1="450" x2="356" y2="266" stroke="#4B7BFF" stroke-width="1.5" stroke-opacity="0.3"/>
+  <!-- Cardinal nodes -->
+  <circle cx="540" cy="190" r="26" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="800" cy="450" r="26" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="540" cy="710" r="26" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="280" cy="450" r="26" fill="url(#ng)" opacity="0.9"/>
+  <!-- Diagonal nodes -->
+  <circle cx="724" cy="266" r="16" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="724" cy="634" r="16" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="356" cy="634" r="16" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="356" cy="266" r="16" fill="#4B7BFF" opacity="0.7"/>
+  <!-- Hub center -->
+  <circle cx="540" cy="450" r="72" fill="url(#mg)"/>
+  <circle cx="518" cy="428" r="26" fill="white" fill-opacity="0.12"/>
+  <!-- Node labels -->
+  <text x="540" y="155" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#8A6CFF" text-anchor="middle">SALES</text>
+  <text x="840" y="455" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#8A6CFF">OPS</text>
+  <text x="540" y="760" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#8A6CFF" text-anchor="middle">FINANCE</text>
+  <text x="210" y="455" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#8A6CFF" text-anchor="end">CLIENT</text>
+  <!-- Text below -->
+  <text x="540" y="870" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="20" font-weight="400" fill="#374151" letter-spacing="3" text-anchor="middle">WHAT IS</text>
+  <text x="540" y="960" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="72" font-weight="700" fill="white" text-anchor="middle">Operational</text>
+  <text x="540" y="1050" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="72" font-weight="700" fill="url(#tg)" text-anchor="middle">Intelligence?</text>
+  <text x="80" y="1140" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="26" font-weight="400" fill="#6B7280">A central AI orchestrator coordinating specialist agents</text>
+  <text x="80" y="1185" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="26" font-weight="400" fill="#6B7280">across every function of your business — sharing</text>
+  <text x="80" y="1230" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="26" font-weight="400" fill="#6B7280">context, making decisions, running automations.</text>
+  <line x1="80" y1="1290" x2="1000" y2="1290" stroke="#1B2B45" stroke-width="1"/>
+  <text x="80" y="1336" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="16" font-weight="600" fill="#8A6CFF">JWEBLY · jwebly.co.uk</text>
+</svg>

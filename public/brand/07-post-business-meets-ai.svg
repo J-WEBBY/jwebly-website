@@ -1,0 +1,51 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#050810"/>
+  <circle cx="540" cy="540" r="700" fill="#8A6CFF" fill-opacity="0.04"/>
+  <circle cx="100"  cy="980" r="400" fill="#4B7BFF" fill-opacity="0.06"/>
+  <circle cx="980"  cy="100" r="350" fill="#8A6CFF" fill-opacity="0.06"/>
+  <!-- Grid dots -->
+  <g fill="#1B2B45">
+    <circle cx="120" cy="120" r="2"/><circle cx="240" cy="120" r="2"/><circle cx="360" cy="120" r="2"/>
+    <circle cx="720" cy="120" r="2"/><circle cx="840" cy="120" r="2"/><circle cx="960" cy="120" r="2"/>
+    <circle cx="120" cy="960" r="2"/><circle cx="240" cy="960" r="2"/><circle cx="360" cy="960" r="2"/>
+    <circle cx="720" cy="960" r="2"/><circle cx="840" cy="960" r="2"/><circle cx="960" cy="960" r="2"/>
+  </g>
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A98DFF"/><stop offset="100%" stop-color="#6B9FFF"/></linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8A6CFF" stop-opacity="0.3"/><stop offset="100%" stop-color="#8A6CFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+  </defs>
+  <!-- Central mark (hub 540,540, d_primary=280) -->
+  <circle cx="540" cy="540" r="295" fill="url(#gl)"/>
+  <circle cx="540" cy="540" r="166" fill="none" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.18"/>
+  <!-- Primary spokes -->
+  <line x1="540" y1="540" x2="540" y2="260" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <line x1="540" y1="540" x2="820" y2="540" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <line x1="540" y1="540" x2="540" y2="820" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <line x1="540" y1="540" x2="260" y2="540" stroke="#8A6CFF" stroke-width="2.5" stroke-opacity="0.4"/>
+  <!-- Secondary spokes (d=198, offset=140) -->
+  <line x1="540" y1="540" x2="680" y2="400" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <line x1="540" y1="540" x2="680" y2="680" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <line x1="540" y1="540" x2="400" y2="680" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <line x1="540" y1="540" x2="400" y2="400" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.24"/>
+  <!-- Primary nodes -->
+  <circle cx="540" cy="260" r="36" fill="url(#ng)" opacity="0.85"/>
+  <circle cx="820" cy="540" r="36" fill="url(#ng)" opacity="0.85"/>
+  <circle cx="540" cy="820" r="36" fill="url(#ng)" opacity="0.85"/>
+  <circle cx="260" cy="540" r="36" fill="url(#ng)" opacity="0.85"/>
+  <!-- Secondary nodes -->
+  <circle cx="680" cy="400" r="23" fill="url(#ng)" opacity="0.55"/>
+  <circle cx="680" cy="680" r="23" fill="url(#ng)" opacity="0.55"/>
+  <circle cx="400" cy="680" r="23" fill="url(#ng)" opacity="0.55"/>
+  <circle cx="400" cy="400" r="23" fill="url(#ng)" opacity="0.55"/>
+  <!-- Hub -->
+  <circle cx="540" cy="540" r="90" fill="url(#mg)"/>
+  <circle cx="512" cy="512" r="34" fill="white" fill-opacity="0.12"/>
+  <!-- Text overlay -->
+  <text x="540" y="130" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="22" font-weight="400" fill="#6B7280" letter-spacing="3" text-anchor="middle">JWEBLY</text>
+  <text x="540" y="970" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="18" font-weight="400" fill="#374151" letter-spacing="2" text-anchor="middle">jwebly.co.uk</text>
+  <rect x="0" y="860" width="1080" height="180" fill="#050810" fill-opacity="0.9"/>
+  <text x="80" y="920" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="52" font-weight="700" fill="white">Business</text>
+  <text x="80" y="985" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="52" font-weight="700" fill="url(#tg)">meets AI.</text>
+</svg>

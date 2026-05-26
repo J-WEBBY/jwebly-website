@@ -1,0 +1,50 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#050810"/>
+  <!-- Horizontal rule accent -->
+  <rect x="0" y="540" width="1080" height="1" fill="#1B2B45"/>
+  <circle cx="200" cy="200" r="350" fill="#8A6CFF" fill-opacity="0.06"/>
+  <circle cx="880" cy="880" r="300" fill="#4B7BFF" fill-opacity="0.06"/>
+  <defs>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A98DFF"/><stop offset="100%" stop-color="#6B9FFF"/></linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8A6CFF" stop-opacity="0.22"/><stop offset="100%" stop-color="#8A6CFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- Corner mark — hub (1000,80) d_primary=55 -->
+  <circle cx="1000" cy="80" r="56" fill="url(#gl)"/>
+  <circle cx="1000" cy="80" r="33" fill="none" stroke="#8A6CFF" stroke-width="0.8" stroke-opacity="0.18"/>
+  <!-- Primary spokes -->
+  <line x1="1000" y1="80" x2="1000" y2="25" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.45"/>
+  <line x1="1000" y1="80" x2="1055" y2="80" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.45"/>
+  <line x1="1000" y1="80" x2="1000" y2="135" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.45"/>
+  <line x1="1000" y1="80" x2="945" y2="80" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.45"/>
+  <!-- Secondary spokes -->
+  <line x1="1000" y1="80" x2="1039" y2="41" stroke="#4B7BFF" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="1000" y1="80" x2="1039" y2="119" stroke="#4B7BFF" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="1000" y1="80" x2="961" y2="119" stroke="#4B7BFF" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="1000" y1="80" x2="961" y2="41" stroke="#4B7BFF" stroke-width="0.9" stroke-opacity="0.28"/>
+  <!-- Primary nodes -->
+  <circle cx="1000" cy="25" r="11" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="1055" cy="80" r="11" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="1000" cy="135" r="11" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="945" cy="80" r="11" fill="url(#ng)" opacity="0.9"/>
+  <!-- Secondary nodes -->
+  <circle cx="1039" cy="41" r="7" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="1039" cy="119" r="7" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="961" cy="119" r="7" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="961" cy="41" r="7" fill="#4B7BFF" opacity="0.7"/>
+  <!-- Hub -->
+  <circle cx="1000" cy="80" r="26" fill="url(#mg)"/>
+  <circle cx="997" cy="77" r="10" fill="white" fill-opacity="0.12"/>
+  <!-- Two-part layout -->
+  <text x="80" y="200" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="90" font-weight="700" fill="url(#tg)">One price.</text>
+  <text x="80" y="320" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="90" font-weight="700" fill="url(#tg)">Zero</text>
+  <text x="80" y="440" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="90" font-weight="700" fill="url(#tg)">surprises.</text>
+  <!-- Bottom section -->
+  <text x="80" y="670" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="32" font-weight="400" fill="#94A3B8">The Pilot is £600, fixed. Nothing more</text>
+  <text x="80" y="720" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="32" font-weight="400" fill="#94A3B8">until you've seen it work and chosen</text>
+  <text x="80" y="770" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="32" font-weight="400" fill="#94A3B8">to scale. No hidden costs. No lock-in.</text>
+  <rect x="80" y="830" width="100" height="3" fill="url(#mg)" rx="2"/>
+  <text x="80" y="920" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="22" font-weight="400" fill="#4B5563">£600 Pilot · £120/month retainer · Custom Full System</text>
+  <text x="80" y="1050" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="18" font-weight="600" fill="#8A6CFF">JWEBLY · jwebly.co.uk</text>
+</svg>

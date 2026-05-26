@@ -1,0 +1,48 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1584" height="396" fill="#050810"/>
+  <!-- Subtle grid -->
+  <line x1="0" y1="198" x2="1584" y2="198" stroke="#1B2B45" stroke-width="1"/>
+  <line x1="792" y1="0" x2="792" y2="396" stroke="#1B2B45" stroke-width="1"/>
+  <!-- Background glow orbs -->
+  <circle cx="200" cy="198" r="300" fill="#8A6CFF" fill-opacity="0.06"/>
+  <circle cx="1384" cy="198" r="250" fill="#4B7BFF" fill-opacity="0.07"/>
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A98DFF"/><stop offset="100%" stop-color="#6B9FFF"/></linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8A6CFF" stop-opacity="0.3"/><stop offset="100%" stop-color="#8A6CFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+  </defs>
+  <!-- Mark (hub at 160,198, d_primary=100) -->
+  <circle cx="160" cy="198" r="108" fill="url(#gl)"/>
+  <circle cx="160" cy="198" r="60"  fill="none" stroke="#8A6CFF" stroke-width="1.5" stroke-opacity="0.18"/>
+  <!-- Primary spokes -->
+  <line x1="160" y1="198" x2="160" y2="98"  stroke="#8A6CFF" stroke-width="2.4" stroke-opacity="0.48"/>
+  <line x1="160" y1="198" x2="260" y2="198" stroke="#8A6CFF" stroke-width="2.4" stroke-opacity="0.48"/>
+  <line x1="160" y1="198" x2="160" y2="298" stroke="#8A6CFF" stroke-width="2.4" stroke-opacity="0.48"/>
+  <line x1="160" y1="198" x2="60"  y2="198" stroke="#8A6CFF" stroke-width="2.4" stroke-opacity="0.48"/>
+  <!-- Secondary spokes (d=71, offset=50) -->
+  <line x1="160" y1="198" x2="210" y2="148" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.28"/>
+  <line x1="160" y1="198" x2="210" y2="248" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.28"/>
+  <line x1="160" y1="198" x2="110" y2="248" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.28"/>
+  <line x1="160" y1="198" x2="110" y2="148" stroke="#8A6CFF" stroke-width="1.4" stroke-opacity="0.28"/>
+  <!-- Primary nodes -->
+  <circle cx="160" cy="98"  r="18" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="260" cy="198" r="18" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="160" cy="298" r="18" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="60"  cy="198" r="18" fill="url(#ng)" opacity="0.9"/>
+  <!-- Secondary nodes -->
+  <circle cx="210" cy="148" r="11" fill="url(#ng)" opacity="0.62"/>
+  <circle cx="210" cy="248" r="11" fill="url(#ng)" opacity="0.62"/>
+  <circle cx="110" cy="248" r="11" fill="url(#ng)" opacity="0.62"/>
+  <circle cx="110" cy="148" r="11" fill="url(#ng)" opacity="0.62"/>
+  <!-- Hub -->
+  <circle cx="160" cy="198" r="42" fill="url(#mg)"/>
+  <circle cx="144" cy="182" r="16" fill="white" fill-opacity="0.13"/>
+  <!-- Wordmark -->
+  <text x="320" y="175" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="72" font-weight="700" fill="white" letter-spacing="6">JWEBLY</text>
+  <text x="322" y="230" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="22" font-weight="400" fill="#94A3B8" letter-spacing="4">OPERATIONAL INTELLIGENCE</text>
+  <!-- Right message -->
+  <text x="1100" y="170" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="28" font-weight="300" fill="#6B7280">Business</text>
+  <text x="1100" y="215" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="28" font-weight="700" fill="url(#tg)">meets AI.</text>
+  <text x="1100" y="255" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="14" font-weight="400" fill="#4B5563">jwebly.co.uk</text>
+</svg>

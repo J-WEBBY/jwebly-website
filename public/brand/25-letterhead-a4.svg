@@ -1,0 +1,77 @@
+<svg width="794" height="1123" viewBox="0 0 794 1123" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- A4 at 96dpi -->
+  <rect width="794" height="1123" fill="#FFFFFF"/>
+  <!-- Header band -->
+  <rect x="0" y="0" width="794" height="110" fill="#050810"/>
+  <rect x="0" y="106" width="794" height="4" fill="#8A6CFF"/>
+  <!-- Footer band -->
+  <rect x="0" y="1050" width="794" height="73" fill="#050810"/>
+  <rect x="0" y="1050" width="794" height="3" fill="#8A6CFF"/>
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A98DFF"/><stop offset="100%" stop-color="#6B9FFF"/></linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8A6CFF" stop-opacity="0.25"/><stop offset="100%" stop-color="#8A6CFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8A6CFF"/><stop offset="100%" stop-color="#4B7BFF"/></linearGradient>
+  </defs>
+  <!-- Header mark — hub (50,55) d_primary=42 -->
+  <circle cx="50" cy="55" r="42" fill="url(#gl)"/>
+  <circle cx="50" cy="55" r="25" fill="none" stroke="#8A6CFF" stroke-width="0.7" stroke-opacity="0.18"/>
+  <!-- Primary spokes -->
+  <line x1="50" y1="55" x2="50" y2="13"  stroke="#8A6CFF" stroke-width="1.2" stroke-opacity="0.4"/>
+  <line x1="50" y1="55" x2="92" y2="55"  stroke="#8A6CFF" stroke-width="1.2" stroke-opacity="0.4"/>
+  <line x1="50" y1="55" x2="50" y2="97"  stroke="#8A6CFF" stroke-width="1.2" stroke-opacity="0.4"/>
+  <line x1="50" y1="55" x2="8"  y2="55"  stroke="#8A6CFF" stroke-width="1.2" stroke-opacity="0.4"/>
+  <!-- Secondary spokes (d=30, offset=21) -->
+  <line x1="50" y1="55" x2="71" y2="34"  stroke="#4B7BFF" stroke-width="0.7" stroke-opacity="0.28"/>
+  <line x1="50" y1="55" x2="71" y2="76"  stroke="#4B7BFF" stroke-width="0.7" stroke-opacity="0.28"/>
+  <line x1="50" y1="55" x2="29" y2="76"  stroke="#4B7BFF" stroke-width="0.7" stroke-opacity="0.28"/>
+  <line x1="50" y1="55" x2="29" y2="34"  stroke="#4B7BFF" stroke-width="0.7" stroke-opacity="0.28"/>
+  <!-- Primary nodes -->
+  <circle cx="50" cy="13" r="8" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="92" cy="55" r="8" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="50" cy="97" r="8" fill="url(#ng)" opacity="0.9"/>
+  <circle cx="8"  cy="55" r="8" fill="url(#ng)" opacity="0.9"/>
+  <!-- Secondary nodes -->
+  <circle cx="71" cy="34" r="5" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="71" cy="76" r="5" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="29" cy="76" r="5" fill="#4B7BFF" opacity="0.7"/>
+  <circle cx="29" cy="34" r="5" fill="#4B7BFF" opacity="0.7"/>
+  <!-- Hub -->
+  <circle cx="50" cy="55" r="18" fill="url(#mg)"/>
+  <circle cx="47" cy="52" r="7" fill="white" fill-opacity="0.12"/>
+  <!-- Header text -->
+  <text x="110" y="47" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="26" font-weight="700" fill="white" letter-spacing="3">JWEBLY</text>
+  <text x="111" y="68" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="9" font-weight="400" fill="#4B5563" letter-spacing="2">OPERATIONAL INTELLIGENCE</text>
+  <!-- Right header contact -->
+  <text x="754" y="40" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="9" font-weight="400" fill="#4B5563" text-anchor="end">hello@jwebly.co.uk</text>
+  <text x="754" y="56" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="9" font-weight="400" fill="#4B5563" text-anchor="end">jwebly.co.uk</text>
+  <text x="754" y="72" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="9" font-weight="400" fill="#4B5563" text-anchor="end">Registered in England and Wales</text>
+  <!-- Date / recipient area -->
+  <text x="60" y="180" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="11" fill="#D1D5DB">Date:</text>
+  <line x1="90" y1="182" x2="350" y2="182" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="230" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="11" fill="#D1D5DB">To:</text>
+  <line x1="80" y1="232" x2="350" y2="232" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="265" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="11" fill="#D1D5DB">Re:</text>
+  <line x1="80" y1="267" x2="734" y2="267" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Content lines -->
+  <line x1="60" y1="350" x2="734" y2="350" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="390" x2="734" y2="390" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="430" x2="734" y2="430" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="470" x2="734" y2="470" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="510" x2="734" y2="510" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="550" x2="734" y2="550" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="590" x2="734" y2="590" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="630" x2="734" y2="630" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="670" x2="734" y2="670" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="710" x2="734" y2="710" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="750" x2="734" y2="750" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="790" x2="734" y2="790" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="60" y1="830" x2="734" y2="830" stroke="#F3F4F6" stroke-width="1"/>
+  <!-- Signature area -->
+  <text x="60" y="940" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="11" fill="#D1D5DB">Yours sincerely,</text>
+  <line x1="60" y1="1000" x2="260" y2="1000" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="1020" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="11" fill="#9CA3AF">Joseph Enemuwe</text>
+  <text x="60" y="1038" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="10" fill="#D1D5DB">Founder &amp; Solutions Architect</text>
+  <!-- Footer -->
+  <text x="397" y="1080" font-family="Inter,-apple-system,system-ui,sans-serif" font-size="9" font-weight="400" fill="#4B5563" text-anchor="middle">JWEBLY · Operational Intelligence · hello@jwebly.co.uk · jwebly.co.uk · Registered in England and Wales</text>
+</svg>
