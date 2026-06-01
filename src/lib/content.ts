@@ -15,6 +15,8 @@ export const SITE = {
   // Primary CTA destination — the on-site booking form (/book-a-call).
   bookCallHref: "/book-a-call",
   healthUrl: "https://jweblyhealth.com",
+  location: "Birmingham, United Kingdom",
+  linkedin: "https://uk.linkedin.com/company/jwebly",
 } as const;
 
 export const NAV_LINKS = [

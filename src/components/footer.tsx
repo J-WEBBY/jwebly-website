@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { FOOTER, SITE } from "@/lib/content";
 
@@ -16,6 +17,16 @@ export function Footer() {
             <p className="mt-5 text-sm leading-relaxed text-muted">
               {FOOTER.tagline}
             </p>
+            <p className="mt-5 text-sm text-faint">{SITE.location}</p>
+            <a
+              href={SITE.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Jwebly on LinkedIn"
+              className="mt-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            >
+              <Linkedin size={16} />
+            </a>
           </div>
 
           {/* Link columns */}
