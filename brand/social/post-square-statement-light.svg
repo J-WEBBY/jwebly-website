@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><rect width="1200" height="1200" fill="#F4F4F2"/><defs><pattern id="gq" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1.2" cy="1.2" r="1.2" fill="rgba(10,10,10,0.06)"/></pattern></defs>
+  <rect width="1200" height="1200" fill="url(#gq)"/>
+    
+    <g>
+    <defs>
+      <radialGradient id="grs" cx="36%" cy="28%" r="78%">
+        <stop offset="0%" stop-color="#4a4a4f"/>
+        <stop offset="42%" stop-color="#1f1f23"/>
+        <stop offset="100%" stop-color="#050505"/>
+      </radialGradient>
+      <radialGradient id="grb" cx="72%" cy="84%" r="46%">
+        <stop offset="0%" stop-color="#8a8a90" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#8a8a90" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="grc"><circle cx="114" cy="114" r="18"/></clipPath>
+    </defs>
+    <circle cx="114" cy="114" r="18" fill="url(#grs)"/>
+    <g clip-path="url(#grc)">
+      <ellipse cx="119.76" cy="121.2" rx="11.16" ry="9.36" fill="url(#grb)"/>
+      <ellipse cx="109.32" cy="108.24" rx="7.2" ry="5.040000000000001" fill="#ffffff" opacity="0.22"/>
+      <ellipse cx="108.6" cy="107.52" rx="2.6999999999999997" ry="1.8" fill="#ffffff" opacity="0.5"/>
+    </g>
+    <circle cx="114" cy="114" r="18" fill="none" stroke="#11B5A7" stroke-opacity="0.3" stroke-width="0.6"/>
+    <text x="144.6" y="126.24" font-family="Geist, Inter, system-ui, sans-serif" font-size="34" font-weight="600" letter-spacing="-1.36" fill="#0A0A0A">Jwebly</text></g>
+    <g><rect x="96" y="355.8" width="40" height="2" fill="#8A8A87"/>
+    <text x="152" y="361.8" font-family="Geist Mono, ui-monospace, monospace" font-size="20" letter-spacing="4" fill="#8A8A87">APPLIED AI</text></g>
+    <text x="96" y="456" font-family="Geist, Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-3" fill="#0A0A0A" font-size="90">Production-grade AI,</text><text x="96" y="560" font-family="Geist, Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-3" fill="#0A0A0A" font-size="90">owned end to<tspan font-style="italic" dx="26" fill="#0A0A0A">end.</tspan></text>
+    <rect x="100" y="616" width="300" height="5" rx="2.5" fill="#11B5A7"/>
+    <text x="96" y="700" font-family="Geist, Inter, system-ui, sans-serif" font-size="32" fill="#52525B">A boutique for regulated, high-stakes work.</text>
+    <text x="96" y="1112" font-family="Geist Mono, ui-monospace, monospace" font-size="20" letter-spacing="2" fill="#8A8A87">jwebly.co.uk</text></svg>

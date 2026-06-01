@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"><rect width="1080" height="1350" fill="#0A0A0A"/><defs><pattern id="gs" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1.2" cy="1.2" r="1.2" fill="rgba(255,255,255,0.06)"/></pattern></defs>
+  <rect width="1080" height="1350" fill="url(#gs)"/><defs><radialGradient id="gt" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="rgba(17,181,167,0.16)"/>
+    <stop offset="100%" stop-color="rgba(17,181,167,0)"/>
+  </radialGradient></defs>
+  <ellipse cx="860" cy="220" rx="460" ry="460" fill="url(#gt)"/>
+    <g>
+    <defs>
+      <radialGradient id="gus" cx="36%" cy="28%" r="75%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="40%" stop-color="#f3f4f6"/>
+        <stop offset="76%" stop-color="#d2d6db"/>
+        <stop offset="100%" stop-color="#aeb3ba"/>
+      </radialGradient>
+      <radialGradient id="guh" cx="60%" cy="64%" r="62%">
+        <stop offset="55%" stop-color="#1b1d22" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#1b1d22" stop-opacity="0.45"/>
+      </radialGradient>
+      <radialGradient id="gub" cx="74%" cy="86%" r="42%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="guc"><circle cx="102" cy="108" r="18"/></clipPath>
+    </defs>
+    <circle cx="102" cy="108" r="18" fill="url(#gus)"/>
+    <g clip-path="url(#guc)">
+      <circle cx="102" cy="108" r="18" fill="url(#guh)"/>
+      <ellipse cx="108.12" cy="115.56" rx="10.799999999999999" ry="9" fill="url(#gub)"/>
+      <ellipse cx="97.32" cy="102.24" rx="7.56" ry="5.3999999999999995" fill="#ffffff" opacity="0.55"/>
+      <ellipse cx="96.6" cy="101.52" rx="2.88" ry="1.98" fill="#ffffff" opacity="0.95"/>
+    </g>
+    <circle cx="102" cy="108" r="18" fill="none" stroke="#11B5A7" stroke-opacity="0.45" stroke-width="0.6"/>
+    <text x="132.6" y="120.24" font-family="Geist, Inter, system-ui, sans-serif" font-size="34" font-weight="600" letter-spacing="-1.36" fill="#FAFAFA">Jwebly</text></g>
+    <g><rect x="84" y="554" width="40" height="2" fill="#6B6B6B"/>
+    <text x="140" y="560" font-family="Geist Mono, ui-monospace, monospace" font-size="20" letter-spacing="4" fill="#6B6B6B">BESPOKE · INTEGRATED · OPERATED</text></g>
+    <text x="84" y="478" font-family="Geist, Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-3" fill="#FAFAFA" font-size="92">AI systems for</text><text x="84" y="584" font-family="Geist, Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-3" fill="#FAFAFA" font-size="92">industries that</text><text x="84" y="690" font-family="Geist, Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-3" fill="#FAFAFA" font-size="92">can't get it<tspan font-style="italic" dx="26">wrong.</tspan></text>
+    <rect x="88" y="748" width="300" height="5" rx="2.5" fill="#11B5A7"/>
+    <text x="84" y="834" font-family="Geist, Inter, system-ui, sans-serif" font-size="34" fill="#A1A1A1">Custom AI agents &amp; automation, fitted to your stack.</text>
+    <text x="84" y="1270" font-family="Geist Mono, ui-monospace, monospace" font-size="20" letter-spacing="2" fill="#6B6B6B">jwebly.co.uk · BIRMINGHAM, UK</text></svg>

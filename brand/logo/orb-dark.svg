@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240"><rect width="240" height="240" fill="#0A0A0A"/><defs><radialGradient id="g0" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="rgba(17,181,167,0.18)"/>
+    <stop offset="100%" stop-color="rgba(17,181,167,0)"/>
+  </radialGradient></defs>
+  <ellipse cx="120" cy="120" rx="120" ry="120" fill="url(#g0)"/>
+    <defs>
+      <radialGradient id="g1s" cx="36%" cy="28%" r="75%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="40%" stop-color="#f3f4f6"/>
+        <stop offset="76%" stop-color="#d2d6db"/>
+        <stop offset="100%" stop-color="#aeb3ba"/>
+      </radialGradient>
+      <radialGradient id="g1h" cx="60%" cy="64%" r="62%">
+        <stop offset="55%" stop-color="#1b1d22" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#1b1d22" stop-opacity="0.45"/>
+      </radialGradient>
+      <radialGradient id="g1b" cx="74%" cy="86%" r="42%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="g1c"><circle cx="120" cy="120" r="96"/></clipPath>
+    </defs>
+    <circle cx="120" cy="120" r="96" fill="url(#g1s)"/>
+    <g clip-path="url(#g1c)">
+      <circle cx="120" cy="120" r="96" fill="url(#g1h)"/>
+      <ellipse cx="152.64" cy="160.32" rx="57.599999999999994" ry="48" fill="url(#g1b)"/>
+      <ellipse cx="95.03999999999999" cy="89.28" rx="40.32" ry="28.799999999999997" fill="#ffffff" opacity="0.55"/>
+      <ellipse cx="91.2" cy="85.44" rx="15.36" ry="10.56" fill="#ffffff" opacity="0.95"/>
+    </g>
+    <circle cx="120" cy="120" r="96" fill="none" stroke="#11B5A7" stroke-opacity="0.45" stroke-width="2.688"/></svg>

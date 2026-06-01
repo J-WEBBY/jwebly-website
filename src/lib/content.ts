@@ -21,7 +21,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { label: "HealthOS", href: "/#healthos" },
-  { label: "What we build", href: "/#what-we-build" },
+  { label: "What we build", href: "/build" },
   { label: "Integrations", href: "/#integrations" },
   { label: "Resources", href: "/#resources" },
   { label: "Company", href: "/#company" },

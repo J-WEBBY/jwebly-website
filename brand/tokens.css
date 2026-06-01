@@ -1,0 +1,114 @@
+/* =============================================================================
+   JWEBLY PARENT — BRAND TOKENS
+   Matches the live website (jwebly.co.uk): near-black, white orb, TEAL accent.
+   NOTE: per direction, the parent kit uses the SAME teal as the website
+   (#11b5a7) — not the electric-blue from the brand doc.
+   ============================================================================= */
+
+:root {
+  /* Surfaces */
+  --bg: #0a0a0a;        /* near-black, primary */
+  --bg-2: #111111;      /* raised */
+  --bg-3: #161616;
+  --paper: #f4f4f2;     /* light-variant background */
+
+  /* Ink */
+  --ink: #fafafa;       /* primary text on dark */
+  --ink-light: #0a0a0a; /* text on light variant */
+  --muted: #a1a1a1;     /* secondary text */
+  --faint: #6b6b6b;     /* labels / kickers */
+
+  /* Hairlines */
+  --hair: rgba(255, 255, 255, 0.12);
+  --hair-strong: rgba(255, 255, 255, 0.18);
+  --hair-dark: rgba(10, 10, 10, 0.12); /* on light/paper */
+
+  /* Accent — TEAL (website), used as a scalpel only */
+  --accent: #11b5a7;
+  --accent-bright: #3fd5c8;
+  --accent-dim: #0e9c90;
+  --accent-glow: rgba(17, 181, 167, 0.22);
+
+  /* Type */
+  --font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "SF Mono", "Fira Code", ui-monospace, monospace;
+
+  --radius: 8px;
+}
+
+/* Geist via CDN (fontsource) so artboards render without a local install.
+   Falls back to Inter/system if offline. */
+@import url("https://cdn.jsdelivr.net/fontsource/css/geist@latest/index.css");
+@import url("https://cdn.jsdelivr.net/fontsource/css/geist-mono@latest/index.css");
+
+/* ---- Shared artboard primitives (reused by every template) ---------------- */
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--faint);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.kicker::before {
+  content: "";
+  width: 26px;
+  height: 1px;
+  background: currentColor;
+}
+
+.headline {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  color: var(--ink);
+}
+
+/* the accent underline-tick under one word */
+.tick {
+  position: relative;
+  white-space: nowrap;
+}
+.tick::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.12em;
+  height: 0.09em;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* faint dotted-grid texture */
+.dotted-grid {
+  background-image: radial-gradient(var(--hair-strong) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* teal radial glow (behind orb / corner ambiance) */
+.glow {
+  background: radial-gradient(circle at center, var(--accent-glow) 0%, transparent 65%);
+}
+
+/* hairline rule with a mono label */
+.rule-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.rule-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--hair);
+}

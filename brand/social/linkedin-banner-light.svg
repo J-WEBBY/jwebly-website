@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1128" height="191" viewBox="0 0 1128 191"><rect width="1128" height="191" fill="#F4F4F2"/><defs><pattern id="ge" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1.2" cy="1.2" r="1.2" fill="rgba(10,10,10,0.06)"/></pattern></defs>
+  <rect width="1128" height="191" fill="url(#ge)"/>
+    
+    <g>
+    <defs>
+      <radialGradient id="gfs" cx="36%" cy="28%" r="78%">
+        <stop offset="0%" stop-color="#4a4a4f"/>
+        <stop offset="42%" stop-color="#1f1f23"/>
+        <stop offset="100%" stop-color="#050505"/>
+      </radialGradient>
+      <radialGradient id="gfb" cx="72%" cy="84%" r="46%">
+        <stop offset="0%" stop-color="#8a8a90" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#8a8a90" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="gfc"><circle cx="316" cy="66" r="15"/></clipPath>
+    </defs>
+    <circle cx="316" cy="66" r="15" fill="url(#gfs)"/>
+    <g clip-path="url(#gfc)">
+      <ellipse cx="320.8" cy="72" rx="9.3" ry="7.800000000000001" fill="url(#gfb)"/>
+      <ellipse cx="312.1" cy="61.2" rx="6" ry="4.2" fill="#ffffff" opacity="0.22"/>
+      <ellipse cx="311.5" cy="60.6" rx="2.25" ry="1.5" fill="#ffffff" opacity="0.5"/>
+    </g>
+    <circle cx="316" cy="66" r="15" fill="none" stroke="#11B5A7" stroke-opacity="0.3" stroke-width="0.6"/>
+      <text x="346" y="74" font-family="Geist, Inter, system-ui, sans-serif" font-size="27" font-weight="600" letter-spacing="-1" fill="#0A0A0A">Jwebly</text></g>
+    <text x="300" y="126" font-family="Geist, Inter, system-ui, sans-serif" font-size="29" font-weight="600" letter-spacing="-0.8" fill="#0A0A0A">Advanced AI agents &amp; automation for high-stakes industries.</text>
+    <rect x="300" y="140" width="150" height="3" rx="1.5" fill="#11B5A7"/>
+    <text x="456" y="151" font-family="Geist Mono, ui-monospace, monospace" font-size="13" letter-spacing="2.5" fill="#8A8A87">BESPOKE · INTEGRATED · OPERATED</text>
+    <text x="300" y="172" font-family="Geist Mono, ui-monospace, monospace" font-size="12" letter-spacing="2.5" fill="#8A8A87">jwebly.co.uk · BIRMINGHAM, UK</text></svg>

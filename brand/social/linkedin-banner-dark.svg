@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1128" height="191" viewBox="0 0 1128 191"><rect width="1128" height="191" fill="#0A0A0A"/><defs><pattern id="gb" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1.2" cy="1.2" r="1.2" fill="rgba(255,255,255,0.06)"/></pattern></defs>
+  <rect width="1128" height="191" fill="url(#gb)"/>
+    <defs><radialGradient id="gc" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="rgba(17,181,167,0.18)"/>
+    <stop offset="100%" stop-color="rgba(17,181,167,0)"/>
+  </radialGradient></defs>
+  <ellipse cx="960" cy="30" rx="420" ry="420" fill="url(#gc)"/>
+    <g>
+    <defs>
+      <radialGradient id="gds" cx="36%" cy="28%" r="75%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="40%" stop-color="#f3f4f6"/>
+        <stop offset="76%" stop-color="#d2d6db"/>
+        <stop offset="100%" stop-color="#aeb3ba"/>
+      </radialGradient>
+      <radialGradient id="gdh" cx="60%" cy="64%" r="62%">
+        <stop offset="55%" stop-color="#1b1d22" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#1b1d22" stop-opacity="0.45"/>
+      </radialGradient>
+      <radialGradient id="gdb" cx="74%" cy="86%" r="42%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="gdc"><circle cx="316" cy="66" r="15"/></clipPath>
+    </defs>
+    <circle cx="316" cy="66" r="15" fill="url(#gds)"/>
+    <g clip-path="url(#gdc)">
+      <circle cx="316" cy="66" r="15" fill="url(#gdh)"/>
+      <ellipse cx="321.1" cy="72.3" rx="9" ry="7.5" fill="url(#gdb)"/>
+      <ellipse cx="312.1" cy="61.2" rx="6.3" ry="4.5" fill="#ffffff" opacity="0.55"/>
+      <ellipse cx="311.5" cy="60.6" rx="2.4" ry="1.65" fill="#ffffff" opacity="0.95"/>
+    </g>
+    <circle cx="316" cy="66" r="15" fill="none" stroke="#11B5A7" stroke-opacity="0.45" stroke-width="0.6"/>
+      <text x="346" y="74" font-family="Geist, Inter, system-ui, sans-serif" font-size="27" font-weight="600" letter-spacing="-1" fill="#FAFAFA">Jwebly</text></g>
+    <text x="300" y="126" font-family="Geist, Inter, system-ui, sans-serif" font-size="29" font-weight="600" letter-spacing="-0.8" fill="#FAFAFA">Advanced AI agents &amp; automation for high-stakes industries.</text>
+    <rect x="300" y="140" width="150" height="3" rx="1.5" fill="#11B5A7"/>
+    <text x="456" y="151" font-family="Geist Mono, ui-monospace, monospace" font-size="13" letter-spacing="2.5" fill="#6B6B6B">BESPOKE · INTEGRATED · OPERATED</text>
+    <text x="300" y="172" font-family="Geist Mono, ui-monospace, monospace" font-size="12" letter-spacing="2.5" fill="#6B6B6B">jwebly.co.uk · BIRMINGHAM, UK</text></svg>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jwebly — Brand Kit</title>
+<style>
+  :root{
+    --bg:#0A0A0A;--bg2:#111;--ink:#FAFAFA;--muted:#A1A1A1;--faint:#6B6B6B;
+    --hair:rgba(255,255,255,.12);--accent:#11B5A7;
+    --sans:"Geist",Inter,-apple-system,system-ui,sans-serif;
+    --mono:"Geist Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1240px;margin:0 auto;padding:64px 32px 120px}
+  .kick{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.16em;color:var(--faint)}
+  h1{font-weight:600;letter-spacing:-.03em;font-size:44px;margin:14px 0 8px}
+  .lede{color:var(--muted);font-size:18px;max-width:680px;line-height:1.6}
+  .accent{color:var(--accent)}
+  h2{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.16em;color:var(--faint);margin:64px 0 20px;display:flex;align-items:center;gap:14px}
+  h2::after{content:"";flex:1;height:1px;background:var(--hair)}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .card{border:1px solid var(--hair);border-radius:8px;background:var(--bg2);overflow:hidden}
+  .frame{display:flex;align-items:center;justify-content:center;padding:22px;background:repeating-conic-gradient(#141414 0% 25%,#101010 0% 50%) 50%/22px 22px}
+  .frame img{max-width:100%;height:auto;display:block}
+  .label{border-top:1px solid var(--hair);padding:12px 16px;font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:12px}
+  .label .dim{color:var(--faint)}
+  .full{grid-column:1/-1}
+  .sw{display:inline-block;width:128px;border:1px solid var(--hair);border-radius:8px;overflow:hidden;margin:0 10px 10px 0;vertical-align:top}
+  .sw .chip{height:64px}.sw .meta{padding:8px 10px;font-family:var(--mono);font-size:11px;color:var(--muted)}.sw .meta b{display:block;color:var(--ink);font-weight:500}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kick">JWEBLY · BRAND KIT</div>
+      <h1>Boutique AI. One orb. <span class="accent">Teal</span> as a scalpel.</h1>
+      <p class="lede">Advanced custom AI agents &amp; automation for high-stakes, regulated industries —
+      <b>jwebly.co.uk</b>. HealthOS by Jwebly is the flagship product (one industry we build for), not the
+      whole story. The orb is a near-3D glossy mark; all PNGs render at 2× in true Geist. See <b>BRAND.md</b>.</p>
+    </header>
+
+    <h2>Palette</h2>
+    <div>
+      <span class="sw"><span class="chip" style="background:#0A0A0A;border-bottom:1px solid var(--hair)"></span><span class="meta"><b>bg</b>#0A0A0A</span></span>
+      <span class="sw"><span class="chip" style="background:#111111"></span><span class="meta"><b>bg-2</b>#111111</span></span>
+      <span class="sw"><span class="chip" style="background:#F4F4F2"></span><span class="meta"><b>paper</b>#F4F4F2</span></span>
+      <span class="sw"><span class="chip" style="background:#FAFAFA"></span><span class="meta"><b>ink</b>#FAFAFA</span></span>
+      <span class="sw"><span class="chip" style="background:#A1A1A1"></span><span class="meta"><b>muted</b>#A1A1A1</span></span>
+      <span class="sw"><span class="chip" style="background:#11B5A7"></span><span class="meta"><b>accent</b>#11B5A7</span></span>
+    </div>
+
+    <h2>Logo system</h2>
+    <div class="grid">
+      <div class="card"><div class="frame"><img src="png/orb-dark.png" width="150" alt=""></div><div class="label"><span>orb-dark</span><span class="dim">3D mark</span></div></div>
+      <div class="card"><div class="frame" style="background:#F4F4F2"><img src="png/orb-light.png" width="150" alt=""></div><div class="label"><span>orb-light</span><span class="dim">3D mark</span></div></div>
+      <div class="card"><div class="frame"><img src="png/lockup-primary-dark.png" width="250" alt=""></div><div class="label"><span>lockup-primary-dark</span><span class="dim">horizontal</span></div></div>
+      <div class="card"><div class="frame" style="background:#F4F4F2"><img src="png/lockup-primary-light.png" width="250" alt=""></div><div class="label"><span>lockup-primary-light</span><span class="dim">horizontal</span></div></div>
+      <div class="card"><div class="frame"><img src="png/lockup-stacked-dark.png" width="180" alt=""></div><div class="label"><span>lockup-stacked-dark</span><span class="dim">square</span></div></div>
+      <div class="card"><div class="frame"><img src="png/favicon.png" width="140" alt=""></div><div class="label"><span>favicon</span><span class="dim">512²</span></div></div>
+      <div class="card"><div class="frame"><img src="png/lockup-mono-white.png" width="250" alt=""></div><div class="label"><span>lockup-mono-white</span><span class="dim">reversed</span></div></div>
+      <div class="card"><div class="frame" style="background:#F4F4F2"><img src="png/lockup-mono-black.png" width="250" alt=""></div><div class="label"><span>lockup-mono-black</span><span class="dim">reversed</span></div></div>
+    </div>
+
+    <h2>LinkedIn</h2>
+    <div class="grid">
+      <div class="card full"><div class="frame"><img src="png/linkedin-banner-dark.png" width="1000" alt=""></div><div class="label"><span>linkedin-banner-dark</span><span class="dim">1128×191</span></div></div>
+      <div class="card full"><div class="frame"><img src="png/linkedin-banner-light.png" width="1000" alt=""></div><div class="label"><span>linkedin-banner-light</span><span class="dim">1128×191</span></div></div>
+      <div class="card"><div class="frame"><img src="png/linkedin-avatar.png" width="200" alt=""></div><div class="label"><span>linkedin-avatar</span><span class="dim">400²</span></div></div>
+      <div class="card"><div class="frame"><img src="png/post-square-statement.png" width="280" alt=""></div><div class="label"><span>post · statement</span><span class="dim">1200²</span></div></div>
+      <div class="card"><div class="frame"><img src="png/post-square-stat.png" width="280" alt=""></div><div class="label"><span>post · stat</span><span class="dim">1200²</span></div></div>
+      <div class="card"><div class="frame"><img src="png/post-square-announcement.png" width="280" alt=""></div><div class="label"><span>post · HealthOS (example)</span><span class="dim">1200²</span></div></div>
+      <div class="card"><div class="frame" style="background:#F4F4F2"><img src="png/post-square-statement-light.png" width="280" alt=""></div><div class="label"><span>post · statement (light)</span><span class="dim">1200²</span></div></div>
+      <div class="card"><div class="frame"><img src="png/post-portrait-statement.png" width="240" alt=""></div><div class="label"><span>post · portrait</span><span class="dim">1080×1350</span></div></div>
+      <div class="card full"><div class="frame"><img src="png/link-cover.png" width="640" alt=""></div><div class="label"><span>link-cover</span><span class="dim">1200×627</span></div></div>
+    </div>
+
+    <h2>Posters</h2>
+    <div class="grid">
+      <div class="card"><div class="frame"><img src="png/poster-type-hero.png" width="260" alt=""></div><div class="label"><span>poster · type hero</span><span class="dim">1080×1350</span></div></div>
+      <div class="card"><div class="frame"><img src="png/poster-orb-centric.png" width="260" alt=""></div><div class="label"><span>poster · orb centric</span><span class="dim">1080×1350</span></div></div>
+      <div class="card full"><div class="frame"><img src="png/poster-split-landscape.png" width="900" alt=""></div><div class="label"><span>poster · split landscape</span><span class="dim">1920×1080</span></div></div>
+    </div>
+  </div>
+</body>
+</html>

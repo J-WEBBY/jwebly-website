@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0A0A0A"/>
+  <rect x="1" y="1" width="510" height="510" rx="111" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+  <defs><radialGradient id="g9" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="rgba(17,181,167,0.22)"/>
+    <stop offset="100%" stop-color="rgba(17,181,167,0)"/>
+  </radialGradient></defs>
+  <ellipse cx="256" cy="250" rx="210" ry="210" fill="url(#g9)"/>
+    <defs>
+      <radialGradient id="gas" cx="36%" cy="28%" r="75%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="40%" stop-color="#f3f4f6"/>
+        <stop offset="76%" stop-color="#d2d6db"/>
+        <stop offset="100%" stop-color="#aeb3ba"/>
+      </radialGradient>
+      <radialGradient id="gah" cx="60%" cy="64%" r="62%">
+        <stop offset="55%" stop-color="#1b1d22" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#1b1d22" stop-opacity="0.45"/>
+      </radialGradient>
+      <radialGradient id="gab" cx="74%" cy="86%" r="42%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="gac"><circle cx="256" cy="250" r="150"/></clipPath>
+    </defs>
+    <circle cx="256" cy="250" r="150" fill="url(#gas)"/>
+    <g clip-path="url(#gac)">
+      <circle cx="256" cy="250" r="150" fill="url(#gah)"/>
+      <ellipse cx="307" cy="313" rx="90" ry="75" fill="url(#gab)"/>
+      <ellipse cx="217" cy="202" rx="63" ry="45" fill="#ffffff" opacity="0.55"/>
+      <ellipse cx="211" cy="196" rx="24" ry="16.5" fill="#ffffff" opacity="0.95"/>
+    </g>
+    <circle cx="256" cy="250" r="150" fill="none" stroke="#11B5A7" stroke-opacity="0.45" stroke-width="4.2"/></svg>
