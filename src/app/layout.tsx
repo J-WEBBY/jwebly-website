@@ -1,42 +1,91 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import "./globals.css";
+import { JoeLauncher } from "@/components/joe/launcher";
+
+const SITE_URL = "https://jwebly.com";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'JweblyHealth — AI Agents for Private Healthcare',
-    template: '%s | JweblyHealth',
+    default: "Jwebly — AI systems for industries that can't get it wrong",
+    template: "%s · Jwebly",
   },
-  description: 'A team of specialist AI employees for private clinics: reception, patient engagement, clinical scribing, CQC compliance, and more. Built for UK healthcare.',
-  keywords: ['healthcare AI', 'AI receptionist', 'private clinic software', 'CQC compliance', 'patient engagement', 'HealthOS', 'JweblyHealth'],
-  authors: [{ name: 'JweblyHealth' }],
-  creator: 'JweblyHealth',
-  publisher: 'JweblyHealth',
-  metadataBase: new URL('https://jweblyhealth.com'),
-  alternates: { canonical: '/' },
+  description:
+    "Jwebly builds production-grade AI systems for high-stakes industries — clinics first, via HealthOS. Plus bespoke AI agents and workflow automation for any field. Built around your tools, run like infrastructure.",
+  keywords: [
+    "AI receptionist",
+    "AI front desk for private clinics",
+    "after-hours enquiry",
+    "patient booking automation",
+    "custom AI agent",
+    "workflow automation",
+    "applied AI",
+    "HealthOS",
+    "Jwebly",
+  ],
+  authors: [{ name: "Jwebly" }],
+  creator: "Jwebly",
+  alternates: { canonical: "/" },
   openGraph: {
-    type: 'website',
-    locale: 'en_GB',
-    url: 'https://jweblyhealth.com',
-    siteName: 'JweblyHealth',
-    title: 'JweblyHealth — AI Agents for Private Healthcare',
-    description: 'Reception, patient engagement, clinical scribing, CQC compliance — all powered by AI. Built for UK private clinics.',
+    type: "website",
+    locale: "en_GB",
+    url: SITE_URL,
+    siteName: "Jwebly",
+    title: "Jwebly — AI systems for industries that can't get it wrong",
+    description:
+      "Production-grade AI built, integrated and operated for high-stakes industries. HealthOS is the flagship; bespoke builds for any field.",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'JweblyHealth — AI Agents for Private Healthcare',
-    description: 'AI-powered operational intelligence for UK private clinics.',
+    card: "summary_large_image",
+    title: "Jwebly — AI systems for industries that can't get it wrong",
+    description:
+      "Production-grade AI built, integrated and operated for high-stakes industries. HealthOS is the flagship.",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  robots: { index: true, follow: true },
+};
+
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Jwebly",
+  url: SITE_URL,
+  description:
+    "Jwebly builds, integrates and operates production-grade AI systems for industries that can't afford to get it wrong. HealthOS is the flagship; bespoke AI agents and workflow automation for any field.",
+  email: "hello@jwebly.co.uk",
+  foundingLocation: {
+    "@type": "Place",
+    address: { "@type": "PostalAddress", addressCountry: "GB" },
+  },
+  makesOffer: {
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "SoftwareApplication",
+      name: "HealthOS",
+      applicationCategory: "BusinessApplication",
+      description:
+        "An AI front desk for private clinics — answers every enquiry the moment it lands, qualifies the patient, and books them straight into your calendar.",
+      url: "https://jweblyhealth.com",
+    },
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en-GB">
-      <body className="antialiased">{children}</body>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+        {children}
+        <JoeLauncher />
+      </body>
     </html>
   );
 }

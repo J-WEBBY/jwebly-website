@@ -46,4 +46,12 @@ next-env.d.ts
 # OS
 Thumbs.db
 
+# Claude Code harness + local dev logs
+.claude/
+dev.log
+deverr.log
+*.log
+
+# Legacy health app (separate project, kept locally but not part of this repo)
+legacy-health/
 

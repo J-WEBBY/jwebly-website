@@ -1,242 +1,177 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* =============================================================================
-   SHADCN/UI — Tailwind v3 compatible CSS variables (hex, not oklch)
-   These power bg-background, text-foreground, bg-card, border-border, etc.
+   DARK-DOMINANT TOKENS (true Vercel — see CLAUDE.md §3)
+   Near-black page, white text, hairline borders, teal used as a scalpel.
    ============================================================================= */
-
-@layer base {
-  :root {
-    --background:            #ffffff;
-    --foreground:            #0f172a;
-    --card:                  #ffffff;
-    --card-foreground:       #0f172a;
-    --popover:               #ffffff;
-    --popover-foreground:    #0f172a;
-    --primary:               #0f172a;
-    --primary-foreground:    #f8fafc;
-    --secondary:             #f1f5f9;
-    --secondary-foreground:  #0f172a;
-    --muted:                 #f1f5f9;
-    --muted-foreground:      #64748b;
-    --accent:                #f1f5f9;
-    --accent-foreground:     #0f172a;
-    --destructive:           #ef4444;
-    --destructive-foreground:#f8fafc;
-    --border:                #e2e8f0;
-    --input:                 #e2e8f0;
-    --ring:                  #94a3b8;
-    --radius:                0.625rem;
-  }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+:root {
+  --background: #0a0a0a; /* near-black page */
+  --surface: #111111; /* cards / raised */
+  --surface-2: #161616;
+  --foreground: #fafafa; /* primary text */
+  --muted: #a1a1a1; /* secondary text */
+  --faint: #6b6b6b; /* labels */
+  --border: rgba(255, 255, 255, 0.1); /* hairlines */
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --accent: #11b5a7; /* Jwebly Health teal — confirm exact brand hex */
+  --accent-dim: #0e9c90;
+  --accent-glow: rgba(17, 181, 167, 0.22);
+  --radius: 8px;
+  --pill: 999px;
 }
 
-/* =============================================================================
-   HEALTHOS DESIGN TOKENS
-   Sidebar: #09090F (deep space) · Content: #F8FAFC · Accent: #2ABFBF (teal)
-   ============================================================================= */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
 
-:root {
-  --sidebar-bg:    #09090F;
-  --teal:          #2ABFBF;
-  --teal-dim:      rgba(42,191,191,0.10);
-  --text-primary:  #0F172A;
-  --text-secondary:#64748B;
-  --text-muted:    #94A3B8;
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-base: var(--radius);
+  --radius-pill: var(--pill);
+
+  --max-width-page: 1200px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-code, kbd, pre, [class*="font-mono"], .font-mono {
-  font-family: var(--font-geist-mono), 'SF Mono', 'Fira Code', monospace;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-  .scrollbar-none {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .scrollbar-none::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-subtle {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0,0,0,0.08) transparent;
-  }
-  .scrollbar-subtle::-webkit-scrollbar {
-    width: 3px;
-  }
-  .scrollbar-subtle::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .scrollbar-subtle::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.08);
-    border-radius: 99px;
-  }
-  .scrollbar-subtle::-webkit-scrollbar-thumb:hover {
-    background: rgba(0,0,0,0.15);
-  }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* =============================================================================
-   GLOBAL SELECT — modern rounded style using system palette
+   STATUS PULSE — live "●" in the hero demo, product badge, Joe header
    ============================================================================= */
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #EAF5FB;
-  border: 1px solid #C5D8E8;
-  border-radius: 10px;
-  padding: 7px 32px 7px 11px;
-  font-size: 13px;
-  color: #172430;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.15s, box-shadow 0.15s;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237B98A6' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  min-width: 0;
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.82);
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-select:hover {
-  border-color: #426D84;
+/* Soft idle glow pulse for the Joe launcher orb */
+@keyframes orb-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--accent-glow);
+  }
+  50% {
+    box-shadow: 0 0 22px 4px var(--accent-glow);
+  }
 }
-
-select:focus {
-  border-color: #077CA5;
-  box-shadow: 0 0 0 3px rgba(7, 124, 165, 0.12);
-}
-
-select option {
-  background: white;
-  color: #172430;
-  padding: 6px 10px;
+.orb-glow {
+  animation: orb-glow 3.2s ease-in-out infinite;
 }
 
 /* =============================================================================
-   FAB MARKDOWN — formatted assistant responses in the floating chat panel
+   VERCEL-STYLE GRAPHICS (CLAUDE.md §6) — pure CSS, no raster
    ============================================================================= */
 
-.fab-md p            { margin: 0 0 10px; line-height: 1.65; }
-.fab-md p:last-child { margin-bottom: 0; }
-.fab-md strong       { font-weight: 600; color: #0f0f0f; }
-.fab-md h1,.fab-md h2,.fab-md h3 { font-weight: 700; color: #0f0f0f; margin: 14px 0 6px; letter-spacing: -0.3px; }
-.fab-md h1 { font-size: 16px; } .fab-md h2 { font-size: 15px; } .fab-md h3 { font-size: 14px; }
-.fab-md ul,.fab-md ol { margin: 0 0 10px; padding-left: 20px; }
-.fab-md li { margin-bottom: 4px; line-height: 1.6; }
-.fab-md code { background: rgba(0,0,0,0.07); border-radius: 5px; padding: 1px 6px; font-size: 12px; font-family: 'SF Mono', monospace; }
-.fab-md pre { background: rgba(0,0,0,0.06); border-radius: 10px; padding: 12px 16px; overflow-x: auto; margin: 8px 0; }
-.fab-md pre code { background: none; padding: 0; }
-.fab-md blockquote { border-left: 3px solid #e0e0e0; padding-left: 12px; color: #6b7280; margin: 8px 0; }
-.fab-md hr { border: none; border-top: 1px solid #e5e7eb; margin: 12px 0; }
-
-/* =============================================================================
-   SYSTEM SCROLLBAR — warm canvas palette
-   ============================================================================= */
-
-::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
+/* Faint dotted-grid texture for tiles / cards */
+.dotted-grid {
+  background-image: radial-gradient(
+    var(--border-strong) 1px,
+    transparent 1px
+  );
+  background-size: 16px 16px;
+  background-position: -8px -8px;
 }
-::-webkit-scrollbar-track {
+
+/* Folded top-right corner accent on a tile */
+.fold-corner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(
+    225deg,
+    var(--surface-2) 0%,
+    var(--surface-2) 50%,
+    transparent 50%
+  );
+  border-left: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-bottom-left-radius: 6px;
+}
+
+/* Centered teal radial glow behind a tile icon */
+.icon-glow {
+  position: relative;
+}
+.icon-glow::before {
+  content: "";
+  position: absolute;
+  inset: -40% ;
+  background: radial-gradient(circle at center, var(--accent-glow) 0%, transparent 60%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Thin, subtle scrollbar for dark surfaces (Joe chat list, etc.) */
+.scrollbar-subtle {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
+}
+.scrollbar-subtle::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-subtle::-webkit-scrollbar-track {
   background: transparent;
 }
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.10);
-  border-radius: 99px;
+.scrollbar-subtle::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.18);
-}
-
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.10) transparent;
+.scrollbar-subtle::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
 }
 
-/* =============================================================================
-   NAV-AWARE LAYOUT
-   --nav-w set by StaffSidebar (220px expanded, 52px collapsed)
-   ============================================================================= */
-.nav-offset {
-  padding-left: var(--nav-w, 220px);
-  padding-top: var(--topbar-h, 56px);
-  transition: padding-left 0.22s ease;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .pulse-dot,
+  .orb-glow {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
-
-/* =============================================================================
-   DARK MODE
-   ============================================================================= */
-
-.theme-dark {
-  background-color: #0D1420;
-  color: rgba(255, 255, 255, 0.85);
-  min-height: 100vh;
-}
-
-.theme-dark .bg-\[\#FAF7F2\]   { background-color: #0D1420 !important; }
-.theme-dark .bg-\[\#FAF9F5\]   { background-color: rgba(255,255,255,0.04) !important; }
-.theme-dark .bg-\[\#F5F2EB\]   { background-color: rgba(255,255,255,0.06) !important; }
-.theme-dark .bg-\[\#F0EDE5\]   { background-color: rgba(255,255,255,0.04) !important; }
-.theme-dark .bg-\[\#FAFAFA\]   { background-color: rgba(255,255,255,0.03) !important; }
-.theme-dark .bg-\[\#EBF2FF\]   { background-color: rgba(0,88,230,0.10) !important; }
-.theme-dark div.bg-white       { background-color: rgba(255,255,255,0.03) !important; }
-.theme-dark li.bg-white        { background-color: rgba(255,255,255,0.03) !important; }
-.theme-dark section.bg-white   { background-color: rgba(255,255,255,0.03) !important; }
-.theme-dark main.bg-white      { background-color: rgba(255,255,255,0.03) !important; }
-.theme-dark header.bg-white    { background-color: rgba(255,255,255,0.03) !important; }
-.theme-dark .text-\[\#181D23\] { color: rgba(255,255,255,0.85) !important; }
-
-/* =============================================================================
-   VOICE PAGE — listening bars + orb pulse
-   ============================================================================= */
-
-@keyframes listeningBar {
-  0%, 100% { transform: scaleY(0.2); opacity: 0.35; }
-  50%       { transform: scaleY(1);  opacity: 1;    }
-}
-
-@keyframes orbPulse {
-  0%, 100% { opacity: 0.7; transform: scale(1);    }
-  50%       { opacity: 1;   transform: scale(1.18); }
-}
-
-/* =============================================================================
-   AGENT ORB — fluid glow pulse for home page chat bar agent selector
-   ============================================================================= */
-@keyframes orb-fluid {
-  0%, 100% { transform: scale(1);    opacity: 0.7;  }
-  40%       { transform: scale(1.22); opacity: 1;    }
-  70%       { transform: scale(0.9);  opacity: 0.82; }
-}
-.orb-fluid { animation: orb-fluid 2.8s ease-in-out infinite; }
-.theme-dark .text-\[\#1A1035\] { color: rgba(255,255,255,0.85) !important; }
-.theme-dark .text-\[\#1a1035\] { color: rgba(255,255,255,0.85) !important; }
-.theme-dark .text-\[\#3D4451\] { color: rgba(255,255,255,0.55) !important; }
-.theme-dark .text-\[\#5A6475\] { color: rgba(255,255,255,0.40) !important; }
-.theme-dark .text-\[\#96989B\] { color: rgba(255,255,255,0.28) !important; }
-.theme-dark .border-\[\#D4E2FF\] { border-color: rgba(255,255,255,0.08) !important; }
-.theme-dark .border-\[\#A8C4FF\] { border-color: rgba(255,255,255,0.14) !important; }
-.theme-dark .hover\:bg-white:hover { background-color: rgba(255,255,255,0.06) !important; }

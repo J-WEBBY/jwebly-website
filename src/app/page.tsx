@@ -1,31 +1,27 @@
-import type { Metadata } from 'next';
-import { MarketingNav } from '@/components/marketing/MarketingNav';
-import { Hero } from '@/components/marketing/Hero';
-import { AgentsSection } from '@/components/marketing/AgentsSection';
-import { Features } from '@/components/marketing/Features';
-import { StatsStrip, ComplianceBadges, FoundingProgramme, Industries, Integrations, AboutJwebly, DiscoveryPresentation, MarketingFooter } from '@/components/marketing/Sections';
-import { inter } from '@/lib/fonts';
+import { Nav } from "@/components/nav";
+import { Hero } from "@/components/hero";
+import { ProductFeature } from "@/components/product-feature";
+import { WhatWeBuild } from "@/components/what-we-build";
+import { HowItWorks } from "@/components/how-it-works";
+import { PartnersStrip } from "@/components/partners-strip";
+import { ResourcesTeaser } from "@/components/resources-teaser";
+import { CtaBand } from "@/components/cta-band";
+import { Footer } from "@/components/footer";
 
-export const metadata: Metadata = {
-  title: 'HealthOS — AI agents for private healthcare',
-  description: 'A team of specialist AI employees for private clinics: reception, patient engagement, clinical scribing, CQC compliance, and social media. Live across aesthetic & wellness, dental, private GP, and more.',
-};
-
-export default function LandingPage() {
+export default function Home() {
   return (
-    <div style={{ fontFamily: inter.style.fontFamily }}>
-      <MarketingNav />
-      <Hero />
-      <StatsStrip />
-      <AgentsSection />
-      <Features />
-      <Industries />
-      <ComplianceBadges />
-      <FoundingProgramme />
-      <Integrations />
-      <AboutJwebly />
-      <DiscoveryPresentation />
-      <MarketingFooter />
-    </div>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <ProductFeature />
+        <WhatWeBuild />
+        <HowItWorks />
+        <PartnersStrip />
+        <ResourcesTeaser />
+        <CtaBand />
+      </main>
+      <Footer />
+    </>
   );
 }

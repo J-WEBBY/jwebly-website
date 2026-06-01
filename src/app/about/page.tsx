@@ -1,32 +1,54 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { MarketingNav } from '@/components/marketing/MarketingNav';
-import { MarketingFooter } from '@/components/marketing/Sections';
-import { inter } from '@/lib/fonts';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageShell, Block } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: 'About — HealthOS by Jwebly',
-  description: 'Learn about Jwebly Ltd and the HealthOS platform.',
+  title: "About",
+  description:
+    "Jwebly is a boutique that builds, integrates and operates production-grade AI systems for high-stakes industries. HealthOS is the flagship.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   return (
-    <div style={{ fontFamily: inter.style.fontFamily, background: '#E2F3F8', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <MarketingNav />
-      <main style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '120px 24px 80px' }}>
-        <div style={{ maxWidth: 560, width: '100%', textAlign: 'center' }}>
-          <div style={{ display: 'inline-block', fontSize: 11, fontWeight: 800, color: '#077CA5', background: 'rgba(7,124,165,0.1)', border: '1px solid rgba(7,124,165,0.2)', borderRadius: 99, padding: '5px 14px', letterSpacing: '0.08em', marginBottom: 24 }}>ABOUT</div>
-          <h1 style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: 800, color: '#172430', letterSpacing: '-0.025em', margin: '0 0 16px', lineHeight: 1.1 }}>About Jwebly</h1>
-          <p style={{ fontSize: 16, color: '#426D84', lineHeight: 1.7, margin: '0 0 36px' }}>
-            Jwebly Ltd. is a UK-based healthcare technology company building HealthOS — the AI operating system for private clinics.
-          </p>
-          <p style={{ fontSize: 14, color: '#7B98A6', lineHeight: 1.75, margin: '0 0 40px' }}>
-            This page is under construction. More coming soon.
-          </p>
-          <Link href="/" style={{ fontSize: 13, color: '#7B98A6', textDecoration: 'none' }}>← Back to home</Link>
-        </div>
-      </main>
-      <MarketingFooter />
-    </div>
+    <PageShell
+      kicker="COMPANY"
+      title="A boutique for AI that can't get it wrong."
+      intro="Jwebly builds production-grade AI systems for businesses in high-stakes, specialist fields — places where a dropped enquiry or a wrong answer costs real money or trust."
+    >
+      <Block>
+        <p>
+          We started in healthcare. HealthOS, our flagship, is an AI front desk
+          for private clinics that answers every enquiry the moment it lands,
+          qualifies the patient, and books them straight into the calendar —
+          day, night, weekend.
+        </p>
+        <p>
+          The same craft goes into bespoke systems for teams in any field:
+          custom automations and agents, built around the tools you already run
+          and owned end to end. We don't hand you a login and disappear — every
+          rollout is led, fitted, and kept running.
+        </p>
+      </Block>
+      <Block heading="How we work">
+        <p>
+          Understand, build, integrate, operate. We learn how your work flows
+          today, shape the system to your reality, wire it into your stack, and
+          keep it sharp as you grow. It earns its place from week one.
+        </p>
+      </Block>
+      <Block heading="Talk to us">
+        <p>
+          The best way to see if we're a fit is a short call.{" "}
+          <Link
+            href="/book-a-call"
+            className="text-foreground underline decoration-accent decoration-2 underline-offset-4"
+          >
+            Book a call
+          </Link>{" "}
+          and we'll map it with you.
+        </p>
+      </Block>
+    </PageShell>
   );
 }
